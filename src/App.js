@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import "./styles.css";
+import Testimonial from "./Components/Testimonial";
+import reviews from "./Data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col w-[100vw] h-[100vh] justify-center items-center">
+      <h1>Our testimonials</h1>
+      <div></div>
+      {/* passing the data to testimonial Components */}
+      <Testimonial reviews={reviews} />
     </div>
   );
 }
